@@ -3,22 +3,6 @@ Cristofer Weber
 February 21, 2015  
 
 
-```r
-trainingURL = url("https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv")
-testingURL = url("https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv")
-
-if(!file.exists("data")) {
-  dir.create("data")
-}
-setwd("data")
-if(!file.exists("pml-training.csv")) {
-  download.file(trainingURL, method = "curl", destfile = "pml-training.csv")
-}
-
-if(!file.exists("pml-testing.csv")) {
-  download.file(testingURL, method = "curl", destfile = "pml-testing.csv")
-}
-```
 
 
 
