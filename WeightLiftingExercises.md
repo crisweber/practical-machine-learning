@@ -58,7 +58,7 @@ My learning method of choice was Random Forests. The model was trained using as 
 mForest = randomForest(y=trainingActivities$classe, x=trainingActivities[, -53], ntree=500, replace=T)
 ```
 
-Here is the Training Classification Error per class, together with the Training Confusion Matrix.
+Here is the Training Classification Error per class, together with the Training Confusion Matrix. (Functions to create this graphs adapted from https://github.com/ua-snap/shiny-apps/tree/master/random_forest_example/)
 
 <img src="WeightLiftingExercises_files/figure-html/unnamed-chunk-8-1.png" title="" alt="" style="display: block; margin: auto;" />
 
